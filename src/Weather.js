@@ -8,7 +8,7 @@ export default function Weather(props) {
       `The weather in ${response.data.name} is ${response.data.main.temp}℃`
     );
   }
-  let apiKey = "a5be15fa2442f2b4c1577f76e6747958";
+  let apiKey = "f617fc313f1abac3b9f67f0a1a41e6c4";
   let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}=${apiKey}&units=metric`;
 
   axios.get(apiURL).then(handleResponse);
